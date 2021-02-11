@@ -8,6 +8,9 @@ class Human:
         self.age = age
         self.energy = energy
 
+    def __str__(self):
+        return f'{self.name} is {self.age} years old and currently has {self.energy}'
+
     def __repr__(self) -> str:
         return f'human(name={self.name}, age={self.age}, energy={self.energy})'
 
